@@ -1,4 +1,7 @@
 button {
+    all: initial;
+}
+button {
     background-color: #e3e8ef;
     border-radius: 0.25rem;
 }

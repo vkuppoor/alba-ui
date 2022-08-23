@@ -3,7 +3,7 @@
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/vkuppoor"
   },
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "",
   "scripts": {
     "rollup": "rollup -c",
@@ -35,6 +35,8 @@
     "identity-obj-proxy": "^3.0.0",
     "jest": "^28.1.3",
     "jest-environment-jsdom": "^28.1.3",
+    "postcss": "^8.4.16",
+    "postcss-cli": "^10.0.0",
     "rollup": "^2.78.1",
     "rollup-plugin-dts": "^4.2.2",
     "rollup-plugin-peer-deps-external": "^2.2.4",
@@ -51,5 +53,14 @@
   "files": [
     "dist"
   ],
-  "types": "dist/index.d.ts"
+  "types": "dist/index.d.ts",
+  "dependencies": {
+    "autoprefixer": "^10.4.8",
+    "postcss-autoreset": "^3.0.4",
+    "postcss-nested": "^5.0.6",
+    "postcss-simple-vars": "^6.0.3"
+  },
+  "browserslist": [
+    "> 2%"
+  ]
 }
