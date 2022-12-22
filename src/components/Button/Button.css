@@ -1,4 +1,302 @@
+/* ************************************************************************************************ */
+/* Colors *********************************************************************************** */
+/* ************************************************************************************************ */
+/* Default Colors */
+/* Alternate Colors */
+/* ************************************************************************************************ */
+/* Import Fonts *********************************************************************************** */
+/* ************************************************************************************************ */
+/* Open Sans: Light 300 */
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../../assets/fonts/Open_Sans/static/OpenSans/OpenSans-Light.ttf?v=1.0.0') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+/* Open Sans: Light 300 Italic */
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../../assets/fonts/Open_Sans/static/OpenSans/OpenSans-LightItalic.ttf?v=1.0.0') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+/* Open Sans: Regular 400 */
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../../assets/fonts/Open_Sans/static/OpenSans/OpenSans-Regular.ttf?v=1.0.0') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+/* Open Sans: Regular 400 Italic */
+/* Open Sans: Medium 500 */
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../../assets/fonts/Open_Sans/static/OpenSans/OpenSans-Medium.ttf?v=1.0.0') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+/* Open Sans: Medium 500 Italic */
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../../assets/fonts/Open_Sans/static/OpenSans/OpenSans-MediumItalic.ttf?v=1.0.0') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+/* Open Sans: SemiBold 600 */
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../../assets/fonts/Open_Sans/static/OpenSans/OpenSans-SemiBold.ttf?v=1.0.0') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+/* Open Sans: SemiBold 600 Italic */
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../../assets/fonts/Open_Sans/static/OpenSans/OpenSans-SemiBoldItalic.ttf?v=1.0.0') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+}
+/* Open Sans: Bold 700 */
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../../assets/fonts/Open_Sans/static/OpenSans/OpenSans-Bold.ttf?v=1.0.0') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+/* Open Sans: Bold 700 Italic */
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../../assets/fonts/Open_Sans/static/OpenSans/OpenSans-BoldItalic.ttf?v=1.0.0') format('truetype');
+    font-weight: 700;
+    font-style: italic;
+}
+/* Open Sans: ExtraBold 800 */
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../../assets/fonts/Open_Sans/static/OpenSans/OpenSans-ExtraBold.ttf?v=1.0.0') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+/* Open Sans: ExtraBold 800 Italic */
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../../assets/fonts/Open_Sans/static/OpenSans/OpenSans-ExtraBoldItalic.ttf?v=1.0.0') format('truetype');
+    font-weight: 800;
+    font-style: italic;
+}
+/* Gotham: Thin (weight 100) */
+@font-face {
+    font-family: 'Gotham';
+    src: url('../../assets/fonts/gotham/Gotham-Thin.ttf?v=1.0.0') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+/* Gotham: Thin Italic (weight 100 style italic) */
+@font-face {
+    font-family: 'Gotham';
+    src: url('../../assets/fonts/gotham/Gotham-ThinItalic.ttf?v=1.0.0') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+}
+/* Gotham: X Light (weight 200) */
+@font-face {
+    font-family: 'Gotham';
+    src: url('../../assets/fonts/gotham/Gotham-XLight.ttf?v=1.0.0') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+/* Gotham: X Light Italic (weight 200 style italic) */
+@font-face {
+    font-family: 'Gotham';
+    src: url('../../assets/fonts/gotham/Gotham-XLightItalic.ttf?v=1.0.0') format('truetype');
+    font-weight: 200;
+    font-style: italic;
+}
+/* Gotham: Light (weight 300) */
+@font-face {
+    font-family: 'Gotham';
+    src: url('../../assets/fonts/gotham/Gotham-Light.ttf?v=1.0.0') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+/* Gotham: Light Italic (weight 300 style italic) */
+@font-face {
+    font-family: 'Gotham';
+    src: url('../../assets/fonts/gotham/Gotham-LightItalic.ttf?v=1.0.0') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+/* Gotham: Book (weight normal) */
+@font-face {
+    font-family: 'Gotham';
+    src: url('../../assets/fonts/gotham/Gotham-Book.ttf?v=1.0.0') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+/* Gotham: Book (weight 400) */
+@font-face {
+    font-family: 'Gotham';
+    src: url('../../assets/fonts/gotham/Gotham-Book.ttf?v=1.0.0') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+/* Gotham: Book Italic (weight normal style italic) */
+@font-face {
+    font-family: 'Gotham';
+    src: url('../../assets/fonts/gotham/Gotham-BookItalic.ttf?v=1.0.0') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+/* Gotham: Book Italic (weight 400 style italic) */
+@font-face {
+    font-family: 'Gotham';
+    src: url('../../assets/fonts/gotham/Gotham-BookItalic.ttf?v=1.0.0') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+}
+/* Gotham: Medium (weight 500) */
+@font-face {
+    font-family: 'Gotham';
+    src: url('../../assets/fonts/gotham/Gotham-Medium.ttf?v=1.0.0') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+/* Gotham: Medium Italic (weight 500 style italic) */
+@font-face {
+    font-family: 'Gotham';
+    src: url('../../assets/fonts/gotham/Gotham-MediumItalic.ttf?v=1.0.0') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+/* Gotham: Bold (weight 600) */
+@font-face {
+    font-family: 'Gotham';
+    src: url('../../assets/fonts/gotham/Gotham-Bold.ttf?v=1.0.0') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+/* Gotham: Bold Italic (weight 600 style italic) */
+@font-face {
+    font-family: 'Gotham';
+    src: url('../../assets/fonts/gotham/Gotham-BoldItalic.ttf?v=1.0.0') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+}
+/* Gotham: Black (weight 700) */
+@font-face {
+    font-family: 'Gotham';
+    src: url('../../assets/fonts/gotham/Gotham-Black.ttf?v=1.0.0') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+/* Gotham: Black Italic (weight 700 style italic) */
+@font-face {
+    font-family: 'Gotham';
+    src: url('../../assets/fonts/gotham/Gotham-BlackItalic.ttf?v=1.0.0') format('truetype');
+    font-weight: 700;
+    font-style: italic;
+}
+/* Gotham: Ultra (weight 800) */
+@font-face {
+    font-family: 'Gotham';
+    src: url('../../assets/fonts/gotham/Gotham-Ultra.ttf?v=1.0.0') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+/* Gotham: Ultra Italic (weight 800 style italic) */
+@font-face {
+    font-family: 'Gotham';
+    src: url('../../assets/fonts/gotham/Gotham-UltraItalic.ttf?v=1.0.0') format('truetype');
+    font-weight: 800;
+    font-style: italic;
+}
+/* Font Awesome 5 Brands */
+@font-face {
+    font-family: 'Font Awesome Brands';
+    src: url('../../assets/fonts/fontawesome/fa-brands-400.ttf?hu3sw6') format('truetype'),
+        url('../../assets/fonts/fontawesome/fa-brands-400.woff2?hu3sw6') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/* Font Awesome 5 (Light) */
+@font-face {
+    font-family: 'Font Awesome Light';
+    src: url('../../assets/fonts/fontawesome/fa-light-300.ttf?hu3sw5') format('truetype'),
+        url('../../assets/fonts/fontawesome/fa-light-300.woff2?hu3sw5') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+/* Font Awesome 5 (Regular) */
+@font-face {
+    font-family: 'Font Awesome Regular';
+    src: url('../../assets/fonts/fontawesome/fa-regular-400.ttf?hu3sw4') format('truetype'),
+        url('../../assets/fonts/fontawesome/fa-regular-400.woff2?hu3sw4') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+/* Font Awesome 5 (Solid) */
+@font-face {
+    font-family: 'Font Awesome Solid';
+    src: url('../../assets/fonts/fontawesome/fa-solid-900.ttf?hu3sw3') format('truetype'),
+        url('../../assets/fonts/fontawesome/fa-solid-900.woff2?hu3sw3') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+/* ************************************************************************************************ */
+/* System Text Fonts ****************************************************************************** */
+/* ************************************************************************************************ */
+.font {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.font-arial {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+.font-lato {
+        font-family: 'Lato', Arial, Helvetica, sans-serif;
+    }
+.font-robotoslab {
+        font-family: 'RobotoSlab', Arial, Helvetica, sans-serif;
+    }
 button {
-    background-color: #e3e8ef;
+    all: initial;
     border-radius: 0.25rem;
+    padding: 0.5rem;
+    cursor: pointer;
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-style: normal;
+    
+}
+/* Colors */
+.primary {
+    background-color: #e3e8ef;
+    color: #444;
+}
+.secondary {
+    background-color: #6c7178;
+    color: #ffffff;
+}
+.success {
+    background-color: #39774f;
+    color: #ffffff;
+}
+.warning {
+    background-color: #dfb13e;
+    color: #444;
+}
+.danger {
+    background-color: #b73d43;
+    color: #ffffff;
+}
+.info {
+    background-color: #57b8da;
+    color: #444;
+}
+.light {
+    background-color: #f9f9fa;
+    color: #444;
+}
+.dark {
+    background-color: #222529;
+    color: #ffffff;
 }

@@ -1,0 +1,54 @@
+@import "../../assets/styles/core/_colors.scss";
+@import "../../assets/styles/core/_fonts.scss";
+
+button {
+    all: initial;
+    border-radius: 0.25rem;
+    padding: 0.5rem;
+    cursor: pointer;
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-style: normal;
+    
+}
+
+/* Colors */
+.primary {
+    background-color: $color-primary;
+    color: $color-gray-400;
+}
+
+.secondary {
+    background-color: $color-secondary;
+    color: $color-white;
+}
+
+.success {
+    background-color: $color-success;
+    color: $color-white;
+}
+
+.warning {
+    background-color: $color-warning;
+    color: $color-gray-400;
+}
+
+.danger {
+    background-color: $color-danger;
+    color: $color-white;
+}
+
+.info {
+    background-color: $color-info;
+    color: $color-gray-400;
+}
+
+.light {
+    background-color: $color-light;
+    color: $color-gray-400;
+}
+
+.dark {
+    background-color: $color-dark;
+    color: $color-white;
+}
