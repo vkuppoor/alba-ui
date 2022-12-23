@@ -307,7 +307,7 @@ fieldset[disabled] a.btn {
 
 .btn-outline-primary:focus,
 .btn-outline-primary.focus {
-  box-shadow: 0 0 0 3px $alba-primary-shadow;
+  box-shadow: 0 0 0 3px rgba(32, 168, 216, 0.5);
 }
 
 .btn-outline-primary.disabled,
