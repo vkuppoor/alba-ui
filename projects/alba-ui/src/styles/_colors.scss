@@ -1,11 +1,285 @@
+
+/*** Button Colors ***/
 // Primary Colors
 $alba-primary-text: #fff;
 $alba-primary-bg: #205493;
+$alba-primary-border: #205493;
 
+$alba-primary-hover-text: #fff;
 $alba-primary-hover-bg: #1b8eb7;
 $alba-primary-hover-border: #1985ac;
 
-$alba-primary-hover-shadow: rgba(32, 168, 216, 0.5);
+$alba-primary-focus-shadow: rgba(32, 168, 216, 0.5);
 
 $alba-primary-disabled-bg: #20a8d8;
 $alba-primary-disabled-border: #20a8d8;
+
+$alba-primary-active-bg: #1b8eb7;
+$alba-primary-active-border: #1985ac;
+
+// Secondary Colors
+
+$alba-secondary-text: #111;
+$alba-secondary-bg: #a4b7c1;
+$alba-secondary-border: #a4b7c1;
+
+$alba-secondary-hover-text: #111;
+$alba-secondary-hover-bg: #8da5b2;
+$alba-secondary-hover-border: #869fac;
+
+$alba-secondary-focus-shadow: rgba(164, 183, 193, 0.5);
+
+$alba-secondary-disabled-bg: #a4b7c1;
+$alba-secondary-disabled-border: #a4b7c1;
+
+$alba-secondary-active-bg: #8da5b2;
+$alba-secondary-active-border: #869fac;
+
+// Success Colors
+
+$alba-success-text: #fff;
+$alba-success-bg: #53a451;
+$alba-success-border: #53a451;
+
+$alba-success-hover-text: #fff;
+$alba-success-hover-bg: #67ad38;
+$alba-success-hover-border: #61a434;
+
+$alba-success-focus-shadow: rgba(121, 196, 71, 0.5);
+
+$alba-success-disabled-bg: #86c38b;
+$alba-success-disabled-border: #79c447;
+
+$alba-success-active-bg: #67ad38;
+$alba-success-active-border: #61a434;
+
+// Info Colors
+
+$alba-info-text: #fff;
+$alba-info-bg: #5087a0;
+$alba-info-border: #5087a0;
+
+$alba-info-hover-text: #111;
+$alba-info-hover-bg: #44b4eb;
+$alba-info-hover-border: #39afea;
+
+$alba-info-focus-shadow: rgba(103, 194, 239, 0.5);
+
+$alba-info-disabled-bg: #67c2ef;
+$alba-info-disabled-border: #67c2ef;
+
+$alba-info-active-bg: #44b4eb;
+$alba-info-active-border: #39afea;
+
+// Warning Colors
+
+$alba-warning-text: #fff;
+$alba-warning-bg: #ce713c;
+$alba-warning-border: #ce713c;
+
+$alba-warning-hover-text: #111;
+$alba-warning-hover-bg: #f9ae18;
+$alba-warning-hover-border: #f9aa0b;
+
+$alba-warning-focus-shadow: rgba(250, 187, 61, 0.5);
+
+$alba-warning-disabled-bg: #fabb3d;
+$alba-warning-disabled-border: #fabb3d;
+
+$alba-warning-active-bg: #f9ae18;
+$alba-warning-active-border: #f9aa0b;
+
+// Danger Colors
+
+$alba-danger-text: #fff;
+$alba-danger-bg: #cb444a;
+$alba-danger-border: #cb444a;
+
+$alba-danger-hover-text: #fff;
+$alba-danger-hover-bg: #ff2e2e;
+$alba-danger-hover-border: #ff2121;
+
+$alba-danger-focus-shadow: rgba(255, 84, 84, 0.5);
+
+$alba-danger-disabled-bg: #ff5454;
+$alba-danger-disabled-border: #ff5454;
+
+$alba-danger-active-bg: #ff2e2e;
+$alba-danger-active-border: #ff2121;
+
+// Light Colors
+
+$alba-light-text: #313335;
+$alba-light-bg: #d9e1e6;
+$alba-light-border: #d9e1e6;
+
+$alba-light-hover-text: #666666;
+$alba-light-hover-bg: #f0f3f5;
+$alba-light-hover-border: #d9e1e6;
+
+$alba-light-focus-shadow: rgba(240, 243, 245, 0.5);
+
+$alba-light-disabled-bg: #f0f3f5;
+$alba-light-disabled-border: #f0f3f5;
+
+$alba-light-active-bg: #d9e1e6;
+$alba-light-active-border: #d1dbe1;
+
+// Dark Colors
+
+$alba-dark-text: #fff;
+$alba-dark-bg: #29363d;
+$alba-dark-border: #29363d;
+
+$alba-dark-hover-text: #fff;
+$alba-dark-hover-bg: #1a2226;
+$alba-dark-hover-border: #151b1f;
+
+$alba-dark-focus-shadow: rgba(41, 54, 61, 0.5);
+
+$alba-dark-disabled-bg: #29363d;
+$alba-dark-disabled-border: #29363d;
+
+$alba-dark-active-bg: #1a2226;
+$alba-dark-active-border: #151b1f;
+
+// Outline Primary Colors
+$alba-outline-primary-text: #20a8d8;
+$alba-outline-primary-border: #20a8d8;
+
+$alba-outline-primary-hover-text: #fff;
+$alba-outline-primary-hover-bg: #20a8d8;
+$alba-outline-primary-hover-border: #20a8d8;
+
+$alba-outline-primary-focus-shadow: rgba(32, 168, 216, 0.5);
+
+$alba-outline-primary-disabled-text: #20a8d8;
+
+$alba-outline-primary-active-text: #fff;
+$alba-outline-primary-active-bg: #20a8d8;
+$alba-outline-primary-active-border: #20a8d8;
+
+// Outline Secondary Colors
+$alba-outline-secondary-text: #a4b7c1;
+$alba-outline-secondary-border: #a4b7c1;
+
+$alba-outline-secondary-hover-text: #fff;
+$alba-outline-secondary-hover-bg: #a4b7c1;
+$alba-outline-secondary-hover-border: #a4b7c1;
+
+$alba-outline-secondary-focus-shadow: rgba(164, 183, 193, 0.5);
+
+$alba-outline-secondary-disabled-text: #a4b7c1;
+
+$alba-outline-secondary-active-text: #fff;
+$alba-outline-secondary-active-bg: #a4b7c1;
+$alba-outline-secondary-active-border: #a4b7c1;
+
+// Outline Success Colors
+$alba-outline-success-text: #79c447;
+$alba-outline-success-border: #79c447;
+
+$alba-outline-success-hover-text: #fff;
+$alba-outline-success-hover-bg: #79c447;
+$alba-outline-success-hover-border: #79c447;
+
+$alba-outline-success-focus-shadow: rgba(121, 196, 71, 0.5);
+
+$alba-outline-success-disabled-text: #79c447;
+
+$alba-outline-success-active-text: #fff;
+$alba-outline-success-active-bg: #79c447;
+$alba-outline-success-active-border: #79c447;
+
+// Outline Info Colors
+$alba-outline-info-text: #67c2ef;
+$alba-outline-info-border: #67c2ef;
+
+$alba-outline-info-hover-text: #fff;
+$alba-outline-info-hover-bg: #67c2ef;
+$alba-outline-info-hover-border: #67c2ef;
+
+$alba-outline-info-focus-shadow: rgba(103, 194, 239, 0.5);
+
+$alba-outline-info-disabled-text: #67c2ef;
+
+$alba-outline-info-active-text: #fff;
+$alba-outline-info-active-bg: #67c2ef;
+$alba-outline-info-active-border: #67c2ef;
+
+// Outline Warning Colors
+$alba-outline-warning-text: #fabb3d;
+$alba-outline-warning-border: #fabb3d;
+
+$alba-outline-warning-hover-text: #fff;
+$alba-outline-warning-hover-bg: #fabb3d;
+$alba-outline-warning-hover-border: #fabb3d;
+
+$alba-outline-warning-focus-shadow: rgba(250, 187, 61, 0.5);
+
+$alba-outline-warning-disabled-text: #fabb3d;
+
+$alba-outline-warning-active-text: #fff;
+$alba-outline-warning-active-bg: #fabb3d;
+$alba-outline-warning-active-border: #fabb3d;
+
+// Outline Danger Colors
+$alba-outline-danger-text: #ff5454;
+$alba-outline-danger-border: #ff5454;
+
+$alba-outline-danger-hover-text: #fff;
+$alba-outline-danger-hover-bg: #ff5454;
+$alba-outline-danger-hover-border: #ff5454;
+
+$alba-outline-danger-focus-shadow: rgba(255, 84, 84, 0.5);
+
+$alba-outline-danger-disabled-text: #ff5454;
+
+$alba-outline-danger-active-text: #fff;
+$alba-outline-danger-active-bg: #ff5454;
+$alba-outline-danger-active-border: #ff5454;
+
+// Outline Light Colors
+$alba-outline-light-text: #f0f3f5;
+$alba-outline-light-border: #f0f3f5;
+
+$alba-outline-light-hover-text: #fff;
+$alba-outline-light-hover-bg: #f0f3f5;
+$alba-outline-light-hover-border: #f0f3f5;
+
+$alba-outline-light-focus-shadow: rgba(240, 243, 245, 0.5);
+
+$alba-outline-light-disabled-text: #f0f3f5;
+
+$alba-outline-light-active-text: #fff;
+$alba-outline-light-active-bg: #f0f3f5;
+$alba-outline-light-active-border: #f0f3f5;
+
+// Outline Dark Colors
+$alba-outline-dark-text: #29363d;
+$alba-outline-dark-border: #29363d;
+
+$alba-outline-dark-hover-text: #fff;
+$alba-outline-dark-hover-bg: #29363d;
+$alba-outline-dark-hover-border: #29363d;
+
+$alba-outline-dark-focus-shadow: rgba(41, 54, 61, 0.5);
+
+$alba-outline-dark-disabled-text: #29363d;
+
+$alba-outline-dark-active-text: #fff;
+$alba-outline-dark-active-bg: #29363d;
+$alba-outline-dark-active-border: #29363d;
+
+// Link Colors
+
+$alba-link-text: #20a8d8;
+
+$alba-link-focus-hover-text: #167495;
+
+$alba-link-disabled-text: #536c79;
+
+
+
+
+
