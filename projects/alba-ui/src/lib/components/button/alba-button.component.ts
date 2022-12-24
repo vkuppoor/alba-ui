@@ -20,13 +20,13 @@ export type AlbaButtonType = 'button' | 'reset' | 'submit';
   template: `
     <ng-container *ngIf="href === undefined">
       <button
-        class="
-          btn 
-          btn{{ outlineClass }}{{ variantClass }} 
-          btn{{ sizeClass }} 
-          {{ disabledClass }} 
-          {{ blockClass }}
-        "
+        [ngClass]="[
+          'btn',
+          setBlockStyle(),
+          setStyle(), 
+          setSizeStyle(), 
+          setDisabledStyle(), 
+        ]"
       >
         <ng-container [ngTemplateOutlet]="buttonContent"></ng-container>
       </button>
@@ -34,14 +34,14 @@ export type AlbaButtonType = 'button' | 'reset' | 'submit';
     <ng-container *ngIf="href !== undefined">
     <a
       [href]="href" 
-      class="
-        btn 
-        btn{{ outlineClass }}{{ variantClass }} 
-        btn{{ sizeClass }} 
-        {{ disabledClass }} 
-        {{ linkClass }} 
-        {{ blockClass }}
-      "
+      [ngClass]="[
+        'btn',
+        setBlockStyle(),
+        setStyle(), 
+        setSizeStyle(), 
+        setDisabledStyle(), 
+        setLinkStyle()
+      ]"
     >
       <ng-container [ngTemplateOutlet]="buttonContent"></ng-container>
     </a>
@@ -63,42 +63,46 @@ export class AlbaButtonComponent {
   @Input() outline: boolean | undefined;
   @Input() href: string | undefined;
   @Input() block: boolean | undefined;
-  @Input() loading = false;
 
-  disabledClass: string = "";
-  variantClass: string = "";
-  outlineClass: string = "";
-  sizeClass: string = "";
-  linkClass: string = "";
-  blockClass: string = "";
-
-  ngOnInit() {
-
-    if ( this.disabled !== undefined || this.disabled === true) {
-      this.disabledClass = 'disabled';
-    }
-
+  setStyle(): string {
     if ( this.outline !== undefined || this.outline === true) {
-      this.outlineClass = '-outline';
+      return 'btn-outline-' + this.variant;
     }
 
-    if ( this.block !== undefined || this.block === true) {
-      this.blockClass = 'btn-block';
-    }
+    return 'btn-' + this.variant;
+  }
 
+  setDisabledStyle(): string {
+    if ( this.disabled !== undefined || this.disabled === true) {
+      return 'disabled';
+    }
+    return '';
+  }
+
+  setSizeStyle(): string {
     if ( this.size == 'small' ) {
-      this.sizeClass = '-sm';
-    } else if ( this.size == 'large' ) {
-      this.sizeClass = '-lg';
-    }
-
-    if (this.href !== undefined) {
-      this.linkClass = "btn-link"
-    }
-
-    this.variantClass = "-" + this.variant;
+      return 'btn-sm';
+    } 
     
+    if ( this.size == 'large' ) {
+      return 'btn-lg';
+    }
 
+    return '';
+  }
+
+  setBlockStyle(): string {
+    if ( this.block !== undefined || this.block === true) {
+      return 'btn-block';
+    }
+    return '';
+  }
+
+  setLinkStyle(): string {
+    if (this.href !== undefined) {
+      return 'btn-link';
+    }
+    return '';
   }
 
  }

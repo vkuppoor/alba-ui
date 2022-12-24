@@ -3,8 +3,8 @@
   "compileOnSave": false,
   "compilerOptions": {
     "paths": {
-      "alba-button": [
-        "dist/alba-button"
+      "alba-ui": [
+        "dist/alba-ui"
       ]
     },
     "baseUrl": "./",
