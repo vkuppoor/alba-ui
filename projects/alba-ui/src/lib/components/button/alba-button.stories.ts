@@ -13,7 +13,7 @@ storiesOf('Alba Button', module)
   component: AlbaButtonComponent,
   template: `
     <div style="display: flex; column-gap: .25rem;">
-      <alba-button (click)="onClick()" >Primary</alba-button>
+    <alba-button (click)="onClick()" >Primary</alba-button>
       <alba-button variant="secondary">Secondary</alba-button>
       <alba-button variant="success">Success</alba-button>
       <alba-button variant="info">Info</alba-button>
@@ -33,9 +33,9 @@ storiesOf('Alba Button', module)
   component: AlbaButtonComponent,
   template: `
     <div style="display: flex; column-gap: .25rem;">
-      <alba-button disabled >Primary Button</alba-button>
-      <alba-button disabled variant="secondary">Secondary</alba-button>
-      <alba-button variant="success" disabled >Success</alba-button>
+      <alba-button disabled >Primary Disabled</alba-button>
+      <alba-button disabled variant="secondary">Secondary Disabled</alba-button>
+      <alba-button variant="success" disabled >Success Disabled</alba-button>
     </div>
   `,
   argTypes: { onClick: { action: 'clicked' } },
@@ -48,8 +48,8 @@ storiesOf('Alba Button', module)
   component: AlbaButtonComponent,
   template: `
     <div style="display: flex; column-gap: .25rem;">
-      <alba-button size="large" >Large</alba-button>
-      <alba-button >Normal</alba-button>
+    <alba-button size="large" >Large</alba-button>
+    <alba-button >Normal</alba-button>
       <alba-button size="small">Small</alba-button>
     </div>
   `,
@@ -63,7 +63,7 @@ storiesOf('Alba Button', module)
   component: AlbaButtonComponent,
   template: `
     <div style="display: flex; column-gap: .25rem;">
-      <alba-button outline (click)="onClick()" >Primary Outline</alba-button>
+    <alba-button outline (click)="onClick()" >Primary Outline</alba-button>
       <alba-button outline variant="secondary">Secondary Outline</alba-button>
       <alba-button outline variant="success">Success Outline</alba-button>
       <alba-button outline variant="info">Info Outline</alba-button>
@@ -85,6 +85,8 @@ storiesOf('Alba Button', module)
   component: AlbaButtonComponent,
   template: `
   <div style="display: flex; column-gap: .25rem;">
+    <alba-button href="https://www.google.com/" link >Google</alba-button>
+    <alba-button link href="https://www.bing.com/" >Bing</alba-button>
     <alba-button href="https://www.google.com/">Google</alba-button>
     <alba-button href="https://www.bing.com/" >Bing</alba-button>
   </div>
