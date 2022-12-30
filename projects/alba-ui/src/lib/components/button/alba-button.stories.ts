@@ -33,9 +33,9 @@ storiesOf('Alba Button', module)
   component: AlbaButtonComponent,
   template: `
     <div style="display: flex; column-gap: .25rem;">
-      <alba-button disabled >Primary Button</alba-button>
-      <alba-button disabled variant="secondary">Secondary</alba-button>
-      <alba-button variant="success" disabled >Success</alba-button>
+      <alba-button disabled >Primary Disabled</alba-button>
+      <alba-button disabled variant="secondary">Secondary Disabled</alba-button>
+      <alba-button variant="success" disabled >Success Disabled</alba-button>
     </div>
   `,
   argTypes: { onClick: { action: 'clicked' } },
@@ -85,6 +85,8 @@ storiesOf('Alba Button', module)
   component: AlbaButtonComponent,
   template: `
   <div style="display: flex; column-gap: .25rem;">
+    <alba-button href="https://www.google.com/" link >Google</alba-button>
+    <alba-button link href="https://www.bing.com/" >Bing</alba-button>
     <alba-button href="https://www.google.com/">Google</alba-button>
     <alba-button href="https://www.bing.com/" >Bing</alba-button>
   </div>

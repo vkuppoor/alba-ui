@@ -13,7 +13,10 @@ export const AlbaButtonTypes = [
 ] as const;
 export type AlbaButtonVariant = typeof AlbaButtonTypes[number];
 export type AlbaButtonSize = 'small' | 'large' | undefined;
-export type AlbaButtonType = 'button' | 'reset' | 'submit';
+export type AlbaButtonDisabled = boolean | undefined | '';
+export type AlbaButtonOutline = boolean | undefined | '';
+export type AlbaButtonBlock = boolean | undefined | '';
+export type AlbaButtonLink = boolean | undefined | '';
 
 @Component({
   selector: 'alba-button',
@@ -58,14 +61,14 @@ export class AlbaButtonComponent {
 
   @Input() variant: AlbaButtonVariant = 'primary';
   @Input() size: AlbaButtonSize;
-  @Input() type: AlbaButtonType = 'button';
-  @Input() disabled: boolean | undefined;
-  @Input() outline: boolean | undefined;
+  @Input() disabled: AlbaButtonDisabled;
+  @Input() outline: AlbaButtonOutline;
+  @Input() block: AlbaButtonBlock;
+  @Input() link: AlbaButtonLink;
   @Input() href: string | undefined;
-  @Input() block: boolean | undefined;
 
   setStyle(): string {
-    if ( this.outline !== undefined || this.outline === true) {
+    if ( this.outline == '' || this.outline !== undefined || this.outline === true) {
       return 'btn-outline-' + this.variant;
     }
 
@@ -73,7 +76,7 @@ export class AlbaButtonComponent {
   }
 
   setDisabledStyle(): string {
-    if ( this.disabled !== undefined || this.disabled === true) {
+    if ( this.disabled == '' || this.disabled !== undefined || this.disabled === true) {
       return 'disabled';
     }
     return '';
@@ -92,14 +95,14 @@ export class AlbaButtonComponent {
   }
 
   setBlockStyle(): string {
-    if ( this.block !== undefined || this.block === true) {
+    if ( this.block == '' || this.block !== undefined || this.block === true) {
       return 'btn-block';
     }
     return '';
   }
 
   setLinkStyle(): string {
-    if (this.href !== undefined) {
+    if (this.link == '' || this.link !== undefined || this.link == true ) {
       return 'btn-link';
     }
     return '';
